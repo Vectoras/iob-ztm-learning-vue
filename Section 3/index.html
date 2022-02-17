@@ -23,8 +23,8 @@
             <label>rotateZ: {{rotateZ}} </label>
             <input type="range" min="-180" max="180" v-model="rotateZ" />
 
-            <button type="button" @click.prevent="resetAllValues">Reset</button>
-            <button type="button">Copy</button>
+            <button type="button" @click.prevent="resetAllValues()">Reset</button>
+            <button type="button" @click.prevent="copyAllValues()">Copy</button>
           </div>
         </section>
         <section class="output">
