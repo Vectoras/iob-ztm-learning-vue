@@ -1,7 +1,7 @@
 const vm = Vue.createApp({
   data() {
     return {
-      perspective_v: 0,
+      perspective_v: 100,
       rotateX_v: 0,
       rotateY_v: 0,
       rotateZ_v: 0,
@@ -43,6 +43,12 @@ const vm = Vue.createApp({
     },
     updateRotateZ(event) {
       this.rotateZ_v = event.target.valueAsNumber;
+    },
+    resetAllValues() {
+      this.perspective_v = 100;
+      this.rotateX_v = 0;
+      this.rotateY_v = 0;
+      this.rotateZ_v = 0;
     },
   },
   watch: {},
