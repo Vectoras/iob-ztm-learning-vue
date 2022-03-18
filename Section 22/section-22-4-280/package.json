@@ -1,5 +1,5 @@
 {
-  "name": "controlled-components",
+  "name": "23.3-emoji",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@joeattardi/emoji-button": "^3.1.1",
     "bootstrap": "^4.6.1",
     "core-js": "^3.21.1",
     "vue": "^3.2.31"
@@ -17,10 +18,26 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.2.31",
-    "@vue/eslint-config-airbnb": "^5.3.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint": "^6.8.0",
     "eslint-plugin-vue": "^7.20.0"
-  }
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
